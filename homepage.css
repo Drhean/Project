@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #e4f4fe;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgb(255, 253, 253);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #03cbe5;
+    & img{
+        width: 90px;
+        height: 90px;
+        cursor: pointer ;
+    }
+}
+
+.navbar nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #e70e0e;
+    font-weight: 500;
+}
+
+.btn {
+    background: #ffaa2a;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.hero {
+    background: linear-gradient(135deg, #96ddf1, #489aff);
+    color: rgb(255, 0, 225);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 160px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #fda014;
+    color: rgb(245, 225, 225);
+    cursor: pointer;
+}
+
+.section {
+    padding: 60px 40px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0497d5;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgb(249, 236, 236);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px 15px 5px;
+}
+
+.card p {
+    padding: 0 15px 15px;
+    color: #d4c6c6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #b8c9cc;
+    margin-top: 40px;
+}
